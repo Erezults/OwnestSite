@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en"
+      data-title-en="Privacy Policy — Ownest"
+      data-title-he="מדיניות פרטיות — Ownest">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/app-icon.png">
+  <script src="/lang-toggle.js"></script>
   <script src="/accessibility-widget.js" defer></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,92 +32,189 @@
   </style>
 </head>
 <body>
-  <div class="header">
-    <a href="/" class="home-link">&larr; Ownest</a>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: July 14, 2026</p>
+
+  <!-- ═════════ English ═════════ -->
+  <div class="lang-en" lang="en" dir="ltr">
+    <div class="header">
+      <a href="/" class="home-link">&larr; Ownest</a>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: July 14, 2026</p>
+    </div>
+    <div class="content">
+
+      <h2>1. Introduction</h2>
+      <p>Ownest: Property Manager ("the App") is a real estate portfolio management application developed by Erez Cohen, operating under E-REZULTS ("we", "us", "our"). This Privacy Policy explains how we collect, use, store, and protect your personal information when you use the App on iPhone or iPad.</p>
+
+      <h2>2. Information We Collect</h2>
+
+      <h3>2.1 Account Information</h3>
+      <ul>
+        <li><strong>Email address</strong> — used for authentication and account recovery</li>
+        <li><strong>Full name</strong> — used for account identification</li>
+        <li><strong>Authentication tokens</strong> — for secure session management</li>
+      </ul>
+
+      <h3>2.2 Property &amp; Financial Data</h3>
+      <ul>
+        <li>Property details (address, name, purchase price, purchase date, status)</li>
+        <li>Financial transactions (income, expenses, amounts, dates, categories)</li>
+        <li>Tenant information (names, lease dates, contact details you enter)</li>
+        <li>Lease periods and rent amounts</li>
+        <li>Vacancy records</li>
+        <li>Property documents and images you upload</li>
+        <li>Portfolio groupings and preferences</li>
+        <li>Custom expense categories you create</li>
+        <li>Recurring transaction schedules</li>
+      </ul>
+
+      <h3>2.3 Usage Data</h3>
+      <ul>
+        <li>App version and build number</li>
+        <li>Language and currency preferences</li>
+        <li>Error logs (no personal financial data included)</li>
+      </ul>
+
+      <h3>2.4 AI-Processed Data (Optional Feature)</h3>
+      <p>If you use the AI receipt/document import feature, images or PDF files you select are sent to Google Gemini AI for text extraction. Only the content you explicitly submit is processed; extracted data is returned to you for review before saving.</p>
+
+      <h2>3. How We Use Your Information</h2>
+      <ul>
+        <li>To provide and operate the App's property management features</li>
+        <li>To authenticate you and maintain your session securely</li>
+        <li>To generate financial reports and summaries from your data</li>
+        <li>To deliver over-the-air app updates (JS bundle updates via Expo)</li>
+        <li>To respond to support requests</li>
+      </ul>
+      <p>We do not sell, rent, or share your personal data with third parties for marketing purposes.</p>
+
+      <h2>4. Data Storage &amp; Security</h2>
+      <p>Your data is stored on Supabase (PostgreSQL) with Row Level Security (RLS) enforced on every table — only you can access your own data. All data is encrypted in transit (HTTPS/TLS) and at rest. Property images and documents are stored in Supabase Storage with signed URLs that expire after a short window.</p>
+
+      <h2>5. Third-Party Services</h2>
+      <ul>
+        <li><strong>Supabase</strong> — database, authentication, and file storage (<a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
+        <li><strong>Expo / EAS Updates</strong> — over-the-air JS bundle delivery (<a href="https://expo.dev/privacy">expo.dev/privacy</a>)</li>
+        <li><strong>Google Gemini AI</strong> — optional AI document parsing (only when you use the import feature) (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
+        <li><strong>Apple App Store</strong> — app distribution (<a href="https://www.apple.com/privacy/">apple.com/privacy</a>)</li>
+      </ul>
+
+      <h2>6. Cookies &amp; Local Storage</h2>
+      <p>The Ownest website (this site) does not use tracking or advertising cookies. It uses your browser's local storage — not cookies — to remember your language choice and your accessibility widget preferences (text size, contrast, motion) on this device only. This data never leaves your browser and is not sent to us. Google Fonts, loaded from fonts.googleapis.com, may set its own cookies under Google's privacy policy.</p>
+
+      <h2>7. Data Retention</h2>
+      <p>Your data is retained as long as your account is active. You can delete individual records (properties, transactions, tenants) within the App. To permanently delete your account and all associated data, email us at <a href="mailto:support@erezults.com">support@erezults.com</a>.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>Ownest is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+
+      <h2>9. Your Rights</h2>
+      <p>Depending on your jurisdiction, you may have rights to access, correct, export, or delete your personal data. To exercise these rights, contact us at <a href="mailto:support@erezults.com">support@erezults.com</a>.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last updated" date above. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>11. Contact</h2>
+      <p>For privacy questions or data requests, contact us at:<br>
+      <a href="mailto:support@erezults.com">support@erezults.com</a><br>
+      E-REZULTS, operated by Erez Cohen</p>
+
+      <p>See also our <a href="/accessibility.html?lang=en">Accessibility Statement</a>.</p>
+
+      <a href="/" class="back">&larr; Back to Ownest</a>
+    </div>
   </div>
-  <div class="content">
 
-    <h2>1. Introduction</h2>
-    <p>Ownest: Property Manager ("the App") is a real estate portfolio management application developed by Erez Cohen, operating under E-REZULTS ("we", "us", "our"). This Privacy Policy explains how we collect, use, store, and protect your personal information when you use the App on iPhone or iPad.</p>
+  <!-- ═════════ עברית ═════════ -->
+  <div class="lang-he" lang="he" dir="rtl">
+    <div class="header">
+      <a href="/" class="home-link">&rarr; Ownest</a>
+      <h1>מדיניות פרטיות</h1>
+      <p>עודכן לאחרונה: 14 ביולי 2026</p>
+      <p>התרגום מובא לנוחות בלבד; הנוסח המחייב הוא הנוסח באנגלית.</p>
+    </div>
+    <div class="content">
 
-    <h2>2. Information We Collect</h2>
+      <h2>1. מבוא</h2>
+      <p>Ownest: Property Manager ("האפליקציה") היא אפליקציה לניהול תיקי נדל"ן שפותחה על ידי ארז כהן, הפועל תחת E-REZULTS ("אנחנו", "אנו", "שלנו"). מדיניות פרטיות זו מסבירה כיצד אנו אוספים, משתמשים, מאחסנים ומגינים על המידע האישי שלכם בעת השימוש באפליקציה באייפון או באייפד.</p>
 
-    <h3>2.1 Account Information</h3>
-    <ul>
-      <li><strong>Email address</strong> — used for authentication and account recovery</li>
-      <li><strong>Full name</strong> — used for account identification</li>
-      <li><strong>Authentication tokens</strong> — for secure session management</li>
-    </ul>
+      <h2>2. המידע שאנו אוספים</h2>
 
-    <h3>2.2 Property & Financial Data</h3>
-    <ul>
-      <li>Property details (address, name, purchase price, purchase date, status)</li>
-      <li>Financial transactions (income, expenses, amounts, dates, categories)</li>
-      <li>Tenant information (names, lease dates, contact details you enter)</li>
-      <li>Lease periods and rent amounts</li>
-      <li>Vacancy records</li>
-      <li>Property documents and images you upload</li>
-      <li>Portfolio groupings and preferences</li>
-      <li>Custom expense categories you create</li>
-      <li>Recurring transaction schedules</li>
-    </ul>
+      <h3>2.1 פרטי חשבון</h3>
+      <ul>
+        <li><strong>כתובת דוא"ל</strong> — לצורך אימות ושחזור חשבון</li>
+        <li><strong>שם מלא</strong> — לצורך זיהוי החשבון</li>
+        <li><strong>אסימוני אימות (tokens)</strong> — לניהול מאובטח של החיבור לחשבון</li>
+      </ul>
 
-    <h3>2.3 Usage Data</h3>
-    <ul>
-      <li>App version and build number</li>
-      <li>Language and currency preferences</li>
-      <li>Error logs (no personal financial data included)</li>
-    </ul>
+      <h3>2.2 נתוני נכסים ופיננסים</h3>
+      <ul>
+        <li>פרטי נכסים (כתובת, שם, מחיר רכישה, תאריך רכישה, סטטוס)</li>
+        <li>תנועות פיננסיות (הכנסות, הוצאות, סכומים, תאריכים, קטגוריות)</li>
+        <li>פרטי שוכרים (שמות, תאריכי שכירות, פרטי קשר שתזינו)</li>
+        <li>תקופות שכירות וסכומי שכר דירה</li>
+        <li>רישומי תקופות ללא שוכר</li>
+        <li>מסמכים ותמונות של נכסים שתעלו</li>
+        <li>קיבוץ נכסים לתיקים והעדפות</li>
+        <li>קטגוריות הוצאה מותאמות אישית שתיצרו</li>
+        <li>תזמונים של תנועות חוזרות</li>
+      </ul>
 
-    <h3>2.4 AI-Processed Data (Optional Feature)</h3>
-    <p>If you use the AI receipt/document import feature, images or PDF files you select are sent to Google Gemini AI for text extraction. Only the content you explicitly submit is processed; extracted data is returned to you for review before saving.</p>
+      <h3>2.3 נתוני שימוש</h3>
+      <ul>
+        <li>גרסת האפליקציה ומספר ה-build</li>
+        <li>העדפות שפה ומטבע</li>
+        <li>יומני שגיאות (ללא מידע פיננסי אישי)</li>
+      </ul>
 
-    <h2>3. How We Use Your Information</h2>
-    <ul>
-      <li>To provide and operate the App's property management features</li>
-      <li>To authenticate you and maintain your session securely</li>
-      <li>To generate financial reports and summaries from your data</li>
-      <li>To deliver over-the-air app updates (JS bundle updates via Expo)</li>
-      <li>To respond to support requests</li>
-    </ul>
-    <p>We do not sell, rent, or share your personal data with third parties for marketing purposes.</p>
+      <h3>2.4 נתונים המעובדים על ידי AI (תכונה אופציונלית)</h3>
+      <p>אם תשתמשו בתכונת ייבוא הקבלות/המסמכים מבוססת ה-AI, תמונות או קובצי PDF שתבחרו יישלחו ל-Google Gemini AI לצורך חילוץ טקסט. מעובד אך ורק תוכן שהגשתם במפורש; הנתונים המחולצים מוחזרים אליכם לבדיקה לפני השמירה.</p>
 
-    <h2>4. Data Storage & Security</h2>
-    <p>Your data is stored on Supabase (PostgreSQL) with Row Level Security (RLS) enforced on every table — only you can access your own data. All data is encrypted in transit (HTTPS/TLS) and at rest. Property images and documents are stored in Supabase Storage with signed URLs that expire after a short window.</p>
+      <h2>3. כיצד אנו משתמשים במידע</h2>
+      <ul>
+        <li>להפעלת תכונות ניהול הנכסים של האפליקציה</li>
+        <li>לאימות זהותכם ולניהול מאובטח של החיבור לחשבון</li>
+        <li>להפקת דוחות וסיכומים פיננסיים מהנתונים שלכם</li>
+        <li>לאספקת עדכוני אפליקציה מרחוק (עדכוני JS דרך Expo)</li>
+        <li>למענה לפניות תמיכה</li>
+      </ul>
+      <p>איננו מוכרים, משכירים או משתפים את המידע האישי שלכם עם צדדים שלישיים למטרות שיווק.</p>
 
-    <h2>5. Third-Party Services</h2>
-    <ul>
-      <li><strong>Supabase</strong> — database, authentication, and file storage (<a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
-      <li><strong>Expo / EAS Updates</strong> — over-the-air JS bundle delivery (<a href="https://expo.dev/privacy">expo.dev/privacy</a>)</li>
-      <li><strong>Google Gemini AI</strong> — optional AI document parsing (only when you use the import feature) (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
-      <li><strong>Apple App Store</strong> — app distribution (<a href="https://www.apple.com/privacy/">apple.com/privacy</a>)</li>
-    </ul>
+      <h2>4. אחסון ואבטחת מידע</h2>
+      <p>המידע שלכם מאוחסן ב-Supabase ‏(PostgreSQL) עם אבטחה ברמת שורה (RLS) על כל טבלה — רק אתם יכולים לגשת למידע שלכם. כל המידע מוצפן בתעבורה (HTTPS/TLS) ובאחסון. תמונות ומסמכי נכסים נשמרים ב-Supabase Storage עם כתובות URL חתומות שתוקפן פג לאחר פרק זמן קצר.</p>
 
-    <h2>6. Cookies & Local Storage</h2>
-    <p>The Ownest website (this site) does not use tracking or advertising cookies. It uses your browser's local storage — not cookies — to remember your language choice and your accessibility widget preferences (text size, contrast, motion) on this device only. This data never leaves your browser and is not sent to us. Google Fonts, loaded from fonts.googleapis.com, may set its own cookies under Google's privacy policy.</p>
+      <h2>5. שירותי צד שלישי</h2>
+      <ul>
+        <li><strong>Supabase</strong> — מסד נתונים, אימות ואחסון קבצים (<a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
+        <li><strong>Expo / EAS Updates</strong> — אספקת עדכוני JS מרחוק (<a href="https://expo.dev/privacy">expo.dev/privacy</a>)</li>
+        <li><strong>Google Gemini AI</strong> — ניתוח מסמכים אופציונלי מבוסס AI (רק בעת שימוש בתכונת הייבוא) (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
+        <li><strong>Apple App Store</strong> — הפצת האפליקציה (<a href="https://www.apple.com/privacy/">apple.com/privacy</a>)</li>
+      </ul>
 
-    <h2>7. Data Retention</h2>
-    <p>Your data is retained as long as your account is active. You can delete individual records (properties, transactions, tenants) within the App. To permanently delete your account and all associated data, email us at <a href="mailto:support@erezults.com">support@erezults.com</a>.</p>
+      <h2>6. עוגיות ואחסון מקומי</h2>
+      <p>אתר Ownest (אתר זה) אינו משתמש בעוגיות מעקב או פרסום. האתר משתמש באחסון המקומי של הדפדפן — לא בעוגיות — כדי לזכור את בחירת השפה שלכם ואת העדפות רכיב הנגישות (גודל טקסט, ניגודיות, אנימציה) במכשיר זה בלבד. מידע זה אינו עוזב את הדפדפן ואינו נשלח אלינו. Google Fonts, הנטען מ-fonts.googleapis.com, עשוי להציב עוגיות משלו בכפוף למדיניות הפרטיות של Google.</p>
 
-    <h2>8. Children's Privacy</h2>
-    <p>Ownest is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+      <h2>7. שמירת מידע</h2>
+      <p>המידע שלכם נשמר כל עוד חשבונכם פעיל. ניתן למחוק רשומות בודדות (נכסים, תנועות, שוכרים) בתוך האפליקציה. למחיקה לצמיתות של החשבון וכל המידע הקשור אליו, כתבו לנו אל <a href="mailto:support@erezults.com">support@erezults.com</a>.</p>
 
-    <h2>9. Your Rights</h2>
-    <p>Depending on your jurisdiction, you may have rights to access, correct, export, or delete your personal data. To exercise these rights, contact us at <a href="mailto:support@erezults.com">support@erezults.com</a>.</p>
+      <h2>8. פרטיות ילדים</h2>
+      <p>Ownest אינה מיועדת לילדים מתחת לגיל 13. איננו אוספים ביודעין מידע אישי מילדים מתחת לגיל 13. אם לדעתכם נאסף אצלנו מידע כזה בשוגג, אנא פנו אלינו מיד.</p>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last updated" date above. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+      <h2>9. הזכויות שלכם</h2>
+      <p>בהתאם לדין החל עליכם, ייתכן שעומדות לכם זכויות לעיין במידע האישי שלכם, לתקנו, לייצאו או למחקו. למימוש זכויות אלה פנו אלינו אל <a href="mailto:support@erezults.com">support@erezults.com</a>.</p>
 
-    <h2>11. Contact</h2>
-    <p>For privacy questions or data requests, contact us at:<br>
-    <a href="mailto:support@erezults.com">support@erezults.com</a><br>
-    E-REZULTS, operated by Erez Cohen</p>
+      <h2>10. שינויים במדיניות זו</h2>
+      <p>אנו עשויים לעדכן מדיניות פרטיות זו מעת לעת. על שינויים מהותיים נודיע באמצעות עדכון התאריך שבשורת "עודכן לאחרונה" שלמעלה. המשך שימוש באפליקציה לאחר השינוי מהווה הסכמה למדיניות המעודכנת.</p>
 
-    <p>See also our <a href="/accessibility.html">Accessibility Statement</a>.</p>
+      <h2>11. יצירת קשר</h2>
+      <p>לשאלות בנושא פרטיות או לבקשות מידע, פנו אלינו:<br>
+      <a href="mailto:support@erezults.com">support@erezults.com</a><br>
+      E-REZULTS, בהפעלת ארז כהן</p>
 
-    <a href="/" class="back">&larr; Back to Ownest</a>
+      <p>ראו גם את <a href="/accessibility.html?lang=he">הצהרת הנגישות</a> שלנו.</p>
+
+      <a href="/" class="back">&rarr; חזרה ל-Ownest</a>
+    </div>
   </div>
+
 </body>
 </html>
