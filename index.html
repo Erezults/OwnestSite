@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en"
+      data-title-en="Ownest: Property Manager — Rental income, expenses &amp; tax"
+      data-title-he="Ownest: ניהול נכסים — הכנסות, הוצאות ודוחות מס">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ownest: Property Manager — Rental income, expenses &amp; tax</title>
-  <meta name="description" content="Ownest: Track properties, income, expenses, tenants, and generate tax reports. The smart property management app for real estate investors.">
+  <meta name="description" content="Ownest: Track properties, income, expenses, tenants, and generate tax reports. The smart property management app for real estate investors." data-content-en="Ownest: Track properties, income, expenses, tenants, and generate tax reports. The smart property management app for real estate investors." data-content-he="Ownest היא הדרך הפשוטה לנהל את הנכסים המושכרים שלכם ולדעת תמיד בדיוק איפה אתם עומדים — הכנסות, הוצאות ומס, הכל במקום אחד.">
   <meta name="apple-itunes-app" content="app-id=6782680064">
   <link rel="icon" type="image/png" href="images/app-icon.png">
   <link rel="apple-touch-icon" href="images/app-icon.png">
-  <meta property="og:title" content="Ownest: Property Manager — Rental income, expenses &amp; tax">
-  <meta property="og:description" content="Track properties, income, expenses, tenants, and generate tax reports. Available on the App Store for iPhone, iPad and Mac.">
+  <meta property="og:title" content="Ownest: Property Manager — Rental income, expenses &amp; tax" data-content-en="Ownest: Property Manager — Rental income, expenses &amp; tax" data-content-he="Ownest: ניהול נכסים — הכנסות, הוצאות ודוחות מס">
+  <meta property="og:description" content="Track properties, income, expenses, tenants, and generate tax reports. Available on the App Store for iPhone, iPad and Mac." data-content-en="Track properties, income, expenses, tenants, and generate tax reports. Available on the App Store for iPhone, iPad and Mac." data-content-he="עקבו אחר נכסים, הכנסות, הוצאות ושוכרים, והפיקו דוחות מס. זמינה ב-App Store ל-iPhone, ל-iPad ול-Mac.">
   <meta property="og:image" content="https://ownest.erezults.com/images/app-icon.png">
   <meta property="og:url" content="https://ownest.erezults.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="/lang-toggle.js"></script>
   <script src="/accessibility-widget.js" defer></script>
   <style>
     :root {
@@ -137,13 +140,18 @@
     footer a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
     footer a:hover { color: var(--blue-bright); }
     footer p { font-size: 13px; }
+    /* ═══ i18n / RTL ═══ */
+    .lang-he h1, .lang-he .section-title { letter-spacing: 0; line-height: 1.2; }
+    .lang-he .section-label { letter-spacing: 0; }
+    .lang-he .skip-link { left: auto; right: 16px; }
   </style>
 </head>
 <body>
 
-  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="lang-en" lang="en" dir="ltr">
+  <a href="#main-content-en" class="skip-link">Skip to content</a>
 
-  <section class="hero" id="main-content">
+  <section class="hero" id="main-content-en">
     <div class="hero-bg"></div>
     <div class="hero-content">
 
@@ -226,6 +234,95 @@
     </div>
     <p>&copy; 2026 E-REZULTS (Erez Cohen) &nbsp;·&nbsp; Ownest: Property Manager</p>
   </footer>
+  </div>
+
+  <div class="lang-he" lang="he" dir="rtl">
+  <a href="#main-content-he" class="skip-link">דלג לתוכן</a>
+
+  <section class="hero" id="main-content-he">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+
+      <div class="app-badge">
+        <div class="icon">
+          <img src="images/app-icon.png" alt="סמל Ownest" onerror="this.style.display='none'">
+        </div>
+        <span>זמינה ב-App Store</span>
+      </div>
+
+      <h1>נהלו את <span class="accent">תיק הנכסים</span><br>שלכם בבהירות</h1>
+
+      <p class="subtitle">
+        עקבו אחר הכנסות, הוצאות, שוכרים וחוזי שכירות בכל הנכסים שלכם. הפיקו דוחות מס, נתחו ביצועים והישארו בשליטה על ההשקעות שלכם בנדל"ן.
+      </p>
+
+      <div class="cta-group">
+        <a href="https://apps.apple.com/app/id6782680064" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          הורדה ב-App Store
+        </a>
+        <a href="mailto:support@erezults.com" class="btn-secondary">
+          פנייה לתמיכה
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <p class="section-label">כל מה שצריך</p>
+    <h2 class="section-title">נבנתה למשקיעי נדל"ן</h2>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background: rgba(59,130,246,0.15);">🏠</div>
+        <h3>לוח בקרה לתיק הנכסים</h3>
+        <p>כל הנכסים שלכם במבט אחד — פעילים, שנמכרו, תזרים מזומנים, תשואה ותפוסה במסך אחד.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background: rgba(34,197,94,0.12);">💳</div>
+        <h3>הכנסות והוצאות</h3>
+        <p>מעקב אחר כל עסקה לכל נכס. סינון לפי תאריך, קטגוריה או נכס. ייצוא דוחות CSV מוצפנים.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background: rgba(245,158,11,0.12);">🤖</div>
+        <h3>ייבוא מסמכים ב-AI</h3>
+        <p>צלמו קבלות או ייבאו קובצי PDF. ה-AI מחלץ סכום, תאריך וקטגוריה — ואתם בודקים לפני השמירה.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background: rgba(14,165,233,0.12);">👥</div>
+        <h3>ניהול שוכרים</h3>
+        <p>ניהול שוכרים, תקופות שכירות, סכומי שכר דירה ותקופות פנוי. מעקב אחר היסטוריית ההשכרה המלאה של כל נכס.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background: rgba(139,92,246,0.12);">📊</div>
+        <h3>דוחות פיננסיים</h3>
+        <p>רווח והפסד, השוואת נכסים, מגמות רב-שנתיות, סיכומי מס וצירי זמן של נכסים. ייצוא ל-PDF או ל-Excel.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background: rgba(239,68,68,0.12);">🌍</div>
+        <h3>ריבוי מטבעות ו-RTL</h3>
+        <p>תמיכה מלאה בעברית ובאנגלית כולל תצוגת RTL. מעקב אחר נכסים בכל מטבע עם עיצוב אוטומטי.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="/privacy.html">מדיניות פרטיות</a>
+      <a href="/terms.html">תנאי שימוש</a>
+      <a href="/support.html">תמיכה</a>
+      <a href="/accessibility.html">נגישות</a>
+      <a href="mailto:support@erezults.com">יצירת קשר</a>
+    </div>
+    <p><bdi>&copy; 2026 E-REZULTS (Erez Cohen)</bdi> &nbsp;·&nbsp; <bdi>Ownest</bdi>: ניהול נכסים</p>
+  </footer>
+  </div>
 
 </body>
 </html>

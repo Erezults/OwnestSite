@@ -1,5 +1,5 @@
 // lang-toggle.js — bilingual (he/en) switcher for the Ownest legal pages
-// (terms / privacy / accessibility). Loaded SYNCHRONOUSLY in <head> so the
+// (home / support / terms / privacy / accessibility). Loaded SYNCHRONOUSLY in <head> so the
 // language resolves before first paint (no flash of the wrong language):
 //   ?lang= (links from the app) > saved choice (localStorage) > browser
 //   language > the page's data-lang default.
@@ -48,6 +48,11 @@
     root.setAttribute('lang', lang);
     root.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
     if (TITLES[lang]) { document.title = TITLES[lang]; }
+    // <meta data-content-en / data-content-he> — description / og per language.
+    var metas = document.querySelectorAll('meta[data-content-' + lang + ']');
+    for (var m = 0; m < metas.length; m++) {
+      metas[m].setAttribute('content', metas[m].getAttribute('data-content-' + lang));
+    }
     var btns = document.querySelectorAll('.ownest-lang-btn');
     for (var i = 0; i < btns.length; i++) {
       var active = btns[i].getAttribute('data-lang-target') === lang;

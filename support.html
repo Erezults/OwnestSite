@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en"
+      data-title-en="Support — Ownest"
+      data-title-he="תמיכה — Ownest">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support — Ownest</title>
-  <meta property="og:title" content="Support — Ownest">
-  <meta property="og:description" content="Get help with Ownest: Property Manager.">
+  <meta property="og:title" content="Support — Ownest" data-content-en="Support — Ownest" data-content-he="תמיכה — Ownest">
+  <meta property="og:description" content="Get help with Ownest: Property Manager." data-content-en="Get help with Ownest: Property Manager." data-content-he="קבלו עזרה עם Ownest: ניהול נכסים.">
   <meta property="og:image" content="https://ownest.erezults.com/images/app-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/app-icon.png">
+  <script src="/lang-toggle.js"></script>
   <script src="/accessibility-widget.js" defer></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -23,7 +26,7 @@
     .header .home-link:hover { color: #7dd3fc; }
     .content { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
     .contact-card { background: linear-gradient(135deg, #1e3a5f, #2563eb); border-radius: 16px; padding: 32px; color: #fff; margin-bottom: 40px; text-align: center; }
-    .contact-card h2 { font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .contact-card h2 { color: #fff; font-family: 'Rubik', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
     .contact-card p { opacity: 0.85; font-size: 15px; margin-bottom: 20px; }
     .contact-card a { display: inline-block; background: #fff; color: #1e3a5f; font-family: 'Rubik', sans-serif; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 10px; text-decoration: none; }
     .contact-card a:hover { background: #e0eeff; }
@@ -32,11 +35,13 @@
     .faq-item h3 { font-family: 'Rubik', sans-serif; font-size: 15px; font-weight: 600; color: #1a1a2e; margin-bottom: 8px; }
     .faq-item p { font-size: 14px; color: #555; line-height: 1.6; }
     .faq-item a { color: #2563eb; }
+    .lang-he .faq-item h3, .lang-he .header h1 { letter-spacing: 0; }
     .back { display: inline-block; margin-top: 40px; color: #2563eb; text-decoration: none; font-weight: 600; font-family: 'Rubik', sans-serif; }
     .back:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+  <div class="lang-en" lang="en" dir="ltr">
   <div class="header">
     <a href="/" class="home-link">&larr; Ownest</a>
     <h1>Support</h1>
@@ -89,7 +94,7 @@
 
     <div class="faq-item">
       <h3>Is my data secure?</h3>
-      <p>Yes. All data is encrypted in transit (HTTPS) and at rest. We use Supabase with Row Level Security, so only you can access your data. See our <a href="/privacy.html">Privacy Policy</a> for full details.</p>
+      <p>Yes. All data is encrypted in transit (HTTPS) and at rest. We use Supabase with Row Level Security, so only you can access your data. See our <a href="/privacy.html?lang=en">Privacy Policy</a> for full details.</p>
     </div>
 
     <div class="faq-item">
@@ -112,9 +117,91 @@
       <p>In the Transactions screen, tap the export button to export transactions as an encrypted CSV file. In Reports, you can export individual reports as PDF or CSV using the share buttons on each report tab.</p>
     </div>
 
-    <p>See also our <a href="/accessibility.html">Accessibility Statement</a>.</p>
+    <p>See also our <a href="/accessibility.html?lang=en">Accessibility Statement</a>.</p>
 
     <a href="/" class="back">&larr; Back to Ownest</a>
+  </div>
+  </div>
+  <div class="lang-he" lang="he" dir="rtl">
+  <div class="header">
+    <a href="/" class="home-link">&rarr; Ownest</a>
+    <h1>תמיכה</h1>
+    <p>אנחנו כאן כדי לעזור</p>
+  </div>
+  <div class="content">
+
+    <div class="contact-card">
+      <h2>צרו קשר</h2>
+      <p>יש שאלה או שצריך עזרה? שלחו לנו דוא"ל ונחזור אליכם תוך 1–2 ימי עסקים.</p>
+      <a href="mailto:support@erezults.com">support@erezults.com</a>
+    </div>
+
+    <h2>שאלות נפוצות</h2>
+
+    <div class="faq-item">
+      <h3>איך מוסיפים נכס?</h3>
+      <p>היכנסו ללשונית נכסים ולחצו על כפתור ה-+. הזינו את שם הנכס, הכתובת, מחיר הרכישה והתאריך. אפשר גם להוסיף תמונה ולסמן את הנכס כפעיל או כנמכר.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך מוסיפים עסקה?</h3>
+      <p>היכנסו ללשונית עסקאות ולחצו על +. בחרו הכנסה או הוצאה, בחרו נכס והזינו סכום, תאריך וקטגוריה. אפשר גם לייבא עסקאות מקובצי PDF או מתמונות של קבלות באמצעות ייבוא ה-AI.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך עובד ייבוא מסמכים ב-AI?</h3>
+      <p>לחצו על כפתור הייבוא (סמל המצלמה) במסך העסקאות. צלמו קבלה או בחרו קובץ PDF או תמונה מהקבצים שלכם. Ownest משתמשת ב-Google Gemini AI כדי לחלץ את פרטי העסקה — ואתם בודקים ומאשרים הכול לפני השמירה.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך מנהלים שוכרים וחוזי שכירות?</h3>
+      <p>פתחו נכס והיכנסו ללשונית חוזה. לחצו על + כדי להוסיף שוכר עם פרטי הקשר שלו ותקופת השכירות. אפשר להוסיף כמה תקופות שכירות לכל נכס כדי לעקוב אחר היסטוריית השוכרים.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>מהם תיקי נכסים?</h3>
+      <p>תיקי נכסים מאפשרים לקבץ נכסים למעקב נפרד — לדוגמה "נכסים להשכרה" ו"בתי נופש". עוברים בין התיקים באמצעות הבורר בכותרת האפליקציה. הנכס "כללי" הוא נכס משותף לכל התיקים.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך צופים בדוחות?</h3>
+      <p>היכנסו ללשונית דוחות. אפשר לצפות ברווח והפסד, בהשוואה, במגמות, בסיכומי מס ובציר הזמן של הנכס. השתמשו במסנני השנה והנכס כדי לצמצם את הנתונים. אפשר לייצא דוחות ל-PDF או ל-CSV.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך מחליפים את שפת האפליקציה?</h3>
+      <p>היכנסו להגדרות ← שפה ובחרו עברית או אנגלית. האפליקציה תופעל מחדש כדי להחיל את שינוי השפה, כולל כיוון התצוגה (RTL/LTR).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>האם המידע שלי מאובטח?</h3>
+      <p>כן. כל המידע מוצפן במעבר (HTTPS) ובאחסון. אנו משתמשים ב-Supabase עם Row Level Security, כך שרק לכם יש גישה למידע שלכם. לפרטים מלאים ראו את <a href="/privacy.html?lang=he">מדיניות הפרטיות</a> שלנו.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>האפליקציה לא נטענת / נתקעתי על גלגל טעינה</h3>
+      <p>סגרו את האפליקציה לגמרי ופתחו אותה מחדש. אם הבעיה נמשכת, בדקו את חיבור האינטרנט. אם עדיין יש תקלה, שלחו לנו דוא"ל לכתובת <a href="mailto:support@erezults.com">support@erezults.com</a> עם תיאור של מה שקרה וגרסת האפליקציה שלכם (מופיעה בתחתית מסך ההגדרות).</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>שכחתי את הסיסמה</h3>
+      <p>במסך ההתחברות לחצו על "שכחת סיסמה?" והזינו את כתובת הדוא"ל שלכם. תקבלו קישור לאיפוס תוך מספר דקות. אם הוא לא הגיע, בדקו בתיקיית הספאם.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך מוחקים את החשבון?</h3>
+      <p>שלחו לנו דוא"ל לכתובת <a href="mailto:support@erezults.com">support@erezults.com</a> כדי למחוק לצמיתות את החשבון ואת כל המידע המשויך אליו — נכסים, עסקאות ורשומות. לא ניתן לבטל פעולה זו.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>איך מייצאים את המידע שלי?</h3>
+      <p>במסך העסקאות לחצו על כפתור הייצוא כדי לייצא עסקאות לקובץ CSV מוצפן. בדוחות אפשר לייצא כל דוח בנפרד ל-PDF או ל-CSV באמצעות כפתורי השיתוף בכל לשונית דוח.</p>
+    </div>
+
+    <p>ראו גם את <a href="/accessibility.html?lang=he">הצהרת הנגישות</a> שלנו.</p>
+
+    <a href="/" class="back">&rarr; חזרה ל-Ownest</a>
+  </div>
   </div>
 </body>
 </html>
